@@ -1,0 +1,17 @@
+/* Calendar styling */
+.rbc-calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Modal styling */
+  .ReactModal__Overlay {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .ReactModal__Content {
+    border-radius: 8px !important;
+    padding: 20px !important;
+  }

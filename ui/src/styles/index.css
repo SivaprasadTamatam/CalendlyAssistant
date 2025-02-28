@@ -1,0 +1,37 @@
+/* Calendar and time slot styles */
+.fc {
+    background-color: #f0f8ff; /* Light blue background for the calendar */
+    color: black;
+  }
+  
+  .fc .fc-daygrid-day-number {
+    color: navy; /* Navy color for the day numbers */
+  }
+  
+  .fc .fc-event {
+    background-color: #006400; /* Green background for events */
+    color: white; /* White text color for events */
+    border: none; /* Remove border for events */
+    border-radius: 5px; /* Rounded corners for events */
+    padding: 5px;
+  }
+  
+  /* Hover effect for events */
+  .fc .fc-event:hover {
+    background-color: #228b22; /* Slightly lighter green on hover */
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  
+  /* Event text styling */
+  .fc .fc-event-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Event date styling */
+  .fc .fc-event-time {
+    font-size: 12px;
+  }
+  

@@ -1,0 +1,74 @@
+/* Calendar container styling */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Calendar styling */
+  .calendar {
+    margin: 20px auto;
+    max-width: 90%; /* Adjusted width for better responsiveness */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Background styling for full calendar */
+  .fc {
+    background-color: #f0f8ff; /* Light blue background for contrast */
+  }
+  
+  /* Availability colors */
+  .green-day {
+    background-color: lightgreen !important;
+    border-radius: 50%;
+  }
+  
+  .orange-day {
+    background-color: orange !important;
+    border-radius: 50%;
+  }
+  
+  .red-day {
+    background-color: red !important;
+    border-radius: 50%;
+  }
+  
+  /* Event styling */
+  .fc-event {
+    background-color: #007bff; /* Blue background for events */
+    color: yellow; /* Yellow text for better visibility */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px; /* Ensures text fits well */
+  }
+  
+  /* Hover effect for events */
+  .fc-event:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out; /* Smoother transition */
+  }
+  
+  /* Event text styling */
+  .fc-event-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center; /* Ensures title is centered */
+    white-space: nowrap; /* Prevents overflow */
+    overflow: hidden; /* Ensures title stays within the bounds */
+    text-overflow: ellipsis; /* Adds ellipsis if title is too long */
+  }
+  
+  /* Event date styling */
+  .fc-event-time {
+    font-size: 12px;
+    color: #ffeb3b; /* Light yellow for the date */
+  }
+  

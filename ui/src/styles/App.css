@@ -1,0 +1,219 @@
+/* Core Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .calendar-page {
+    text-align: center;
+  }
+  
+  .calendar-container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .time-slot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .time-slot {
+    background: #f0f8ff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .time-slot div {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* Timezone Badges */
+  .time-slot div:first-child {
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .time-slot div:last-child {
+    color: #7f8c8d;
+    font-size: 0.8em;
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #3498db;
+    padding: 20px;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /* Light Blue */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white; /* Change text color to white */
+  }
+  
+  /* Dashboard styling */
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Calendar styling */
+  .calendar {
+    margin: 20px auto;
+    max-width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  /* Custom styles for different days */
+  .past-day {
+    background-color: #d3d3d3; /* Dark grey */
+    color: #ffffff;
+  }
+  
+  .available-day {
+    background-color: #87ceeb; /* Light blue */
+    color: #000000;
+  }
+  
+  .selected-day {
+    background-color: #32cd32; /* Green */
+    color: #ffffff;
+  }
+  
+  /* Time slot styles */
+  .time-slot {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .time-slot.booked {
+    background-color: #32cd32; /* Green */
+    color: #ffffff;
+  }
+  
+  .time-slot.blocked {
+    background-color: #d3d3d3; /* Dark grey */
+    color: #ffffff;
+    pointer-events: none;
+  }
+  
+  /* FullCalendar custom styles */
+  .fc .fc-event {
+    background-color: #007bff !important; /* Blue event color */
+    color: white !important;
+    border: none;
+  }
+  
+  .fc .fc-event:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+  }
+  
+  /* Booking form styling */
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .booking-form label {
+    margin: 10px 0 5px;
+  }
+  
+  .booking-form input {
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .booking-form button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Time Slots Horizontal Layout */
+  .time-slots-container {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .time-slot {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* New styles for time-slot-container */
+  .time-slot-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .time-slot {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .time-slot:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add to App.css */
+  .rbc-calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .rbc-toolbar button {
+    color: #2196F3;
+    border: 1px solid #2196F3;
+  }
+  
+  .rbc-toolbar button.rbc-active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
