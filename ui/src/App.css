@@ -1,0 +1,314 @@
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-actions button {
+  margin: 5px;
+  padding: 8px 12px;
+}
+
+/* Slot Colors */
+.green-slot {
+  background-color: #b6f0b6 !important;
+}
+
+.orange-slot {
+  background-color: #ffd79b !important;
+}
+
+.red-slot {
+  background-color: #ff9999 !important;
+}
+
+.green-tile {
+  background-color: #d4edda !important;
+}
+
+.yellow-tile {
+  background-color: #ffeeba !important;
+}
+
+.red-tile {
+  background-color: #f8d7da !important;
+}
+
+.weekend-day {
+  background-color: red !important;
+  color: white;
+  pointer-events: none;
+}
+
+.past-day {
+  background-color: lightgray !important;
+  pointer-events: none;
+}
+
+.selected-day {
+  background-color: lightblue;
+}
+
+.available-day {
+  background-color: lightgreen;
+}
+
+/* General Button Styling */
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: lightgray;
+}
+
+/* App Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.calendar {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day-label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.day.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.empty-day {
+  border: none;
+}
+
+.time-slot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time-slot-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.time-slot-item:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-info {
+  margin-top: 20px;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.time-slot {
+  padding: 0.5rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.time-slot:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.time-slot.selected {
+  background: #2196f3;
+  color: white;
+}
+
+.selection-summary {
+  position: fixed;
+  bottom: 2rem;
+  background: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.slot-list {
+  margin: 20px 0;
+}
+
+.slot {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slot:hover {
+  background-color: #e3f2fd;
+}
+
+.slot.selected {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff3cd;
+}
+
+.status:not(:empty) {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .calendar,
+  .time-slots {
+    width: 100%;
+  }
+}
+
+/* Fully Available Day - Green */
+.available-day {
+  background-color: #28a745 !important;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Partially Available Day - Orange */
+.partial-day {
+  background-color: #ffb74d !important;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Fully Booked Day - Red */
+.fully-booked-day {
+  background-color: #e53935 !important;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Calendar grid and common styles */
+.day:hover:not(.fully-booked-day) {
+  filter: brightness(0.9);
+}
+
+/* Slot button styles */
+.slot-btn {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.slot-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.slot-btn.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Success and error messages */
+.message {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}

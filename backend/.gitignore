@@ -1,0 +1,35 @@
+# Environment files
+.env
+.env.local
+.env.*
+
+# Dependency directories (if using Node.js backend)
+node_modules/
+
+# Compiled output (if applicable)
+dist/
+build/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database files (if present)
+*.sqlite
+*.db
+
+# Temporary files
+tmp/
+temp/
+
+# Secrets/keys (if they exist)
+*.pem
+*.key
+/bin/
+/vendor/
+/.env
+*.log

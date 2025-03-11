@@ -1,0 +1,55 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "axios": "^1.7.9",
+    "cra-template": "1.2.0",
+    "cross-env": "^7.0.3",
+    "date-fns": "^4.1.0",
+    "moment-timezone": "^0.5.47",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.17.1",
+    "react-calendar": "^5.1.0",
+    "react-datepicker": "^8.1.0",
+    "react-dom": "^18.3.1",
+    "react-modal": "^3.16.3",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "start:cross-env": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
+    "start:set": "set GENERATE_SOURCEMAP=false && react-scripts start",
+    "webpack:start": "webpack serve --open",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
